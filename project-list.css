@@ -1,0 +1,62 @@
+/*CSS file for project list task*/
+
+* {
+	background: #E5E5E5;
+	letter-spacing: -0.03em;
+	font-family: 'Inter';
+	font-style: normal;
+	padding: 10px;
+
+	/* Main Black */
+	color: #181717;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 121.5%;
+	/* or 22px */
+	width: 360px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 121.5%;
+	width: 360px;
+}
+
+.small {
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 121.5%;
+	/* or 17px */
+
+	/* Main Gray */
+	color: #606060;
+}
+
+img {
+	background: linear-gradient(0deg, rgba(96, 96, 96, 0.2), rgba(96, 96, 96, 0.2)), url(.jpg);
+	float: right;
+	padding: 0;
+}
+
+a {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 121.5%;
+	/* or 22px */
+
+	letter-spacing: -0.03em;
+	text-decoration-line: underline;
+
+	width: 360px;
+}
+
+hr {
+	border: none;
+	border-top: 1.5px solid #181717;
+}
+
