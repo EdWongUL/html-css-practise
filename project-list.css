@@ -6,53 +6,57 @@
 	font-family: 'Inter';
 	font-style: normal;
 	padding: 10px;
+	font-size: 18px;
+	line-height: 121.5%;
+	font-weight: 400;
+
 
 	/* Main Black */
 	color: #181717;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 30px;
+}
+
+p {
+	width: 360px;
 }
 
 h1 {
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 121.5%;
-	/* or 22px */
 	width: 360px;
 }
 
-p {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 121.5%;
-	width: 360px;
+section {
+	height: 400px;
+	position: relative;
 }
 
 .small {
-
-	font-weight: 400;
 	font-size: 14px;
-	line-height: 121.5%;
-	/* or 17px */
-
-	/* Main Gray */
 	color: #606060;
 }
 
 img {
-	background: linear-gradient(0deg, rgba(96, 96, 96, 0.2), rgba(96, 96, 96, 0.2)), url(.jpg);
+	background: linear-gradient(0deg, rgba(96, 96, 96, 0.2), rgba(96, 96, 96, 0.2)), url(.jpg); /*don't think this does anything but it's in the inspect tab*/
 	float: right;
 	padding: 0;
+	width:  640px;
+	display: inline-block;
 }
 
 a {
 	font-weight: 500;
 	font-size: 18px;
-	line-height: 121.5%;
-	/* or 22px */
 
 	letter-spacing: -0.03em;
 	text-decoration-line: underline;
 
-	width: 360px;
+	width: 200px;
+	position: absolute;
+	bottom: 15px;
 }
 
 hr {
