@@ -1,0 +1,91 @@
+
+* {
+	box-sizing: content-box;
+	font-family: Actor, sans-serif;
+}
+
+img {
+	filter: drop-shadow(0px 4px 90px rgba(0, 0, 0, 0.25));
+	float: left;
+	width: 470px;
+	margin: -20px 20px 10px -45px;
+}
+
+h1 {
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 54px;
+	letter-spacing: 0.08em;
+
+	/* Font Title color */
+	color: #2B3742;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	/* or 160% */
+	width: 870px;
+	letter-spacing: -0.03em;
+	color: #58616D;
+}
+
+.container {
+	position: absolute;
+	width: 1259px;
+	height: 412px;
+	left: 91px;
+	top: 90px;
+	background: #FAF7F3;
+	border-radius: 14px;
+}
+
+.rightbit {
+	margin: 90px 70px;
+}
+
+input {
+	width: 490px;
+	height: 72px;
+	background: #FFFFFF;
+	box-shadow: 0px 5.14286px 25.7143px rgba(0, 0, 0, 0.05);
+	border-radius: 12.8571px;
+
+	/* Style the font in input's default value */
+	font-family: 'Actor';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20.5714px;
+	line-height: 41px;
+	/* identical to box height, or 200% */
+	letter-spacing: -0.03em;
+	color: #999999;
+  border-style: none;
+
+
+	/* Need to change from box model because it's easier to pad the text on the inside without changing values of the width and stuff*/
+	box-sizing: border-box;
+	padding: 0px 20px;
+
+}
+
+label {
+	position: relative;
+}
+
+label:before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  bottom: -5px;
+  vertical-align: middle;
+  background: url("./arrow.svg") center / contain no-repeat;
+}
+
