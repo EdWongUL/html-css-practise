@@ -1,14 +1,17 @@
 
 * {
-	box-sizing: content-box;
+	box-sizing: border-box;
 	font-family: Actor, sans-serif;
 }
+
 
 img {
 	filter: drop-shadow(0px 4px 90px rgba(0, 0, 0, 0.25));
 	float: left;
-	width: 470px;
-	margin: -20px 20px 10px -45px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 h1 {
@@ -29,27 +32,48 @@ p {
 	font-size: 20px;
 	line-height: 32px;
 	/* or 160% */
-	width: 870px;
+	width: 65%;
 	letter-spacing: -0.03em;
 	color: #58616D;
 }
 
+/*TODO still can't seem to center the outmost container for some reason*/
 .container {
-	position: absolute;
-	width: 1259px;
+	box-sizing: content-box;
 	height: 412px;
-	left: 91px;
-	top: 90px;
 	background: #FAF7F3;
 	border-radius: 14px;
+	display: block;
+	width: 100%;
 }
 
 .rightbit {
-	margin: 90px 70px;
+	display: inline-block;
+	/*margin: 90px 70px;*/
+	position: relative;
+	width: 70%;
+	height: 100%;
+	float: right;
 }
 
+.rightbit2 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+.leftbit {
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	height: 100%;
+	/*margin: 90px 70px;*/
+}
+
+
 input {
-	width: 490px;
+	width: 65%;
 	height: 72px;
 	background: #FFFFFF;
 	box-shadow: 0px 5.14286px 25.7143px rgba(0, 0, 0, 0.05);
