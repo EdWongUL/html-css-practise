@@ -5,11 +5,9 @@
 	letter-spacing: -0.03em;
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
-	padding: 10px;
 	font-size: 18px;
 	line-height: 121.5%;
 	font-weight: 400;
-
 
 	/* Main Black */
 	color: #181717;
@@ -17,36 +15,46 @@
 }
 
 body {
-	margin: 30px;
-}
-
-p {
-	width: 360px;
+	margin: 20px;
 }
 
 h1 {
 	font-weight: 500;
-	width: 360px;
+	width: 100%;
 }
 
 section {
 	height: 400px;
+	position: relative;
+	padding: 30px 0px;
+	margin: 60px 30px 30px;
+}
+
+.left {
+	width: 35%;
+	height: 100%;
 	position: relative;
 }
 
 .small {
 	font-size: 14px;
 	color: #606060;
+	width: 100%;
 }
 
 img {
-	background: linear-gradient(0deg, rgba(96, 96, 96, 0.2), rgba(96, 96, 96, 0.2)), url(.jpg); /*don't think this does anything but it's in the inspect tab*/
+/*	background: linear-gradient(0deg, rgba(96, 96, 96, 0.2), rgba(96, 96, 96, 0.2)), url(.jpg); /*don't think this does anything but it's in the inspect tab*/
 	float: right;
-	padding: 0;
-	width:  640px;
+	margin: 10px 0px;
+	width:  60%;
+	height: 100%;
 	display: inline-block;
+
+	object-fit: contain;
 }
 
+/* This gets a bit funky if the width of the page is narrowed down significantly. The text above will
+resize but the anchor is absoluted so just kinda ignores the rest */
 a {
 	font-weight: 500;
 	font-size: 18px;
@@ -54,13 +62,14 @@ a {
 	letter-spacing: -0.03em;
 	text-decoration-line: underline;
 
-	width: 300px;
+	width: 100%;
 	position: absolute;
-	bottom: 15px;
+	bottom: 0px;
 }
 
 hr {
 	border: none;
 	border-top: 1.5px solid #181717;
+	margin: 60px 30px;
 }
 
