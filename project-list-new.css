@@ -1,0 +1,89 @@
+/*CSS file for project list task*/
+
+* {
+	background: #E5E5E5;
+	letter-spacing: -0.03em;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 121.5%;
+	font-weight: 400;
+
+	/* Main Black */
+	color: #181717;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	display:  grid;
+	justify-content: center;
+	grid-template-rows: repeat(3, 450px);
+	margin: 100px 0px;
+	padding: 0px 5%;
+	grid-row-gap: 114px;
+
+}
+
+section {
+	display: inline-grid;
+	max-width: 1200px;
+	min-height: 500px;
+	justify-content: space-between;
+	grid-template-columns: 40% 60%;
+	border-bottom: 1px solid black;
+}
+
+h1 {
+	font-weight: 500;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.left {
+	display: inline-grid;
+	width: 75%;
+	grid-template-rows: 3fr 1fr;
+	align-content: space-between;
+}
+
+.top {
+	align-self: start;
+
+}
+
+.bottom {
+	align-self: start;
+}
+
+.small {
+	font-size: 14px;
+	line-height: 121.5%;
+	/* or 17px */
+
+	letter-spacing: -0.03em;
+
+	/* Main Gray */
+
+	color: #606060;
+}
+
+
+a {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 121.5%;
+	/* or 22px */
+
+	letter-spacing: -0.03em;
+	text-decoration-line: underline;
+
+	/* Main Black */
+
+	color: #181717;	
+}
+

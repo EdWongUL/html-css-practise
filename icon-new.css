@@ -1,0 +1,113 @@
+* {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 54px;
+	text-align: center;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+
+	color: #F75C4E;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	/* identical to box height */
+
+	color: #070F18;
+}
+
+p {
+	font-size: 16px;
+	line-height: 32px;
+	/* or 200% */
+
+	color: #575455;
+}
+
+.container {
+	width: 90%;
+	margin: 5%;
+	display: inline-grid;
+	grid-template-areas: "header header header"
+		"share track offline"
+		"kanban reward country";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 300px 1fr 1fr;
+}
+
+.top {
+	grid-area: header;
+	align-self: center;
+	justify-self: center;
+	max-width: 400px;
+	text-align: center;
+}
+
+.item {
+	margin: 30px;
+}
+
+.share {
+	grid-area: share;
+}
+
+.track {
+	grid-area: track;
+}
+
+.offline {
+	grid-area: offline;
+}
+
+.kanban {
+	grid-area: kanban;
+}
+
+.reward {
+	grid-area: reward;
+}
+
+.country {
+	grid-area: country;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 835px) {
+	.container {
+		grid-template-areas: "header header"
+			"share track"
+			"offline country"
+			"kanban reward";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 300px repeat(3, 1fr);
+	}
+}
+
+
+@media only screen and (max-width: 375px) {
+	.container {
+		grid-template-areas: "header"
+			"share"
+			"offline"
+			"kanban"
+			"track"
+			"country"
+			"reward";
+		grid-template-columns: 1fr;
+		grid-template-rows: 300px repeat(6, 1fr);
+	}
+}

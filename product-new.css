@@ -1,0 +1,297 @@
+* {
+	font-family: 'Abril Fatface';
+	font-style: normal;
+	box-sizing: content-box;
+}
+
+body {
+	margin: 0px;
+}
+
+section {
+	height: 700px;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 32px;
+	/* or 123% */
+	width: 80%;
+	margin: 30px auto;
+
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	/* Black */
+
+	color: #1B1B1B;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		"navL navL navR navR"
+		"left left right right"
+		". bottom bottom .";
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 90px 800px 550px;
+}
+
+.navBar {
+	/* for keeping the nav bar at the top */
+	position: sticky;
+	top: 0;
+	justify-content: space-between;
+	padding: 30px;
+	z-index: 1;
+}
+
+.logo {
+	grid-area: 1 / 2 / 2 / 4;
+}
+
+.L {
+	grid-area: navL;
+	background: #AEAFDF;
+}
+
+.R {
+	grid-area: navR;
+	background: #F2EFE9;
+	text-align: end;
+}
+
+.left {
+	position: relative;
+	background: #AEAFDF;
+	grid-area: left;
+}
+
+.right {
+	background: #F2EFE9;
+	grid-area: right;
+	align-content: space-between;
+	position: relative;
+}
+
+.box {
+	padding: 12%;
+}
+
+.navItem {
+	padding: 30px;
+}
+
+.logo {
+	margin: 0px auto;
+	left: 0;
+	right: 0;
+}
+
+.image {
+	width: 100%;
+}
+
+.scroll {
+	position: absolute;
+	bottom: 60px;
+	margin: 0px auto;
+	left: 0;
+	right: 0;
+}
+
+.cart {
+	padding-right: 5px;
+}
+
+.cartNumber {
+	text-align: center;
+	color: #FFFFFF;
+
+	background-image: url("./cart.svg");
+	background-repeat: no-repeat;
+
+	width: 24px;
+	height: 24px;
+
+	display: inline-block;
+}
+
+.subtitle {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	/* identical to box height, or 167% */
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.pageTitle {
+	font-size: 36px;
+	line-height: 40px;
+	text-transform: capitalize;
+}
+
+.sizesContainer {
+	width: 70%;
+}
+
+.sizes {
+	display: inline-block;
+	width: 25%;
+
+	margin: 30px 30px 30px 0px;
+	text-align: center;
+}
+
+.learnDosage {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	/* or 167% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.1em;
+	text-decoration-line: underline;
+	text-transform: uppercase;
+}
+
+.launch {
+	background: #D3D3D3;
+
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	/* or 112% */
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: rgba(0, 0, 0, 0.5);
+
+	width: 80%;
+	padding: 15px 0;
+	margin: 30px 0;
+}
+
+.learnMore {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #000000;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 70px;
+	text-decoration-line: underline;
+	/* identical to box height, or 133% */
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	text-align: center;
+
+	color: #FFFFFF;
+	bottom: 0px;
+	padding: 0;
+	text-underline-offset: 4px;
+}
+
+.bottom {
+	grid-area: bottom;
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: 5% auto;
+
+}
+
+.changeZip {
+	font-family: 'ABeeZee';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	/* identical to box height, or 167% */
+
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration-line: underline;
+	text-underline-offset: 4px;
+
+	/* Black */
+
+	color: #1B1B1B;
+}
+
+.near {
+	display: block;
+
+	margin: 30px auto;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	/* Black */
+
+	color: #1B1B1B;
+	width: 70%;
+}
+
+.addressContainer {
+	text-align: left;
+}
+
+.storeName {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	/* or 122% */
+
+
+	/* Black */
+
+	color: #1B1B1B;
+	margin: 10px 0px;
+}
+
+.address {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	/* or 129% */
+
+	display: flex;
+	align-items: center;
+
+	/* Black */
+
+	color: #1B1B1B;
+	margin: 10px 0px;
+}
